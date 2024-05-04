@@ -109,10 +109,15 @@ def main():
     
     st.markdown('''
         ### Proporción relativa de la unidad por cada ciudad
-        La siguiente gráfica muestra la proporción de las unidades comparadas a partir del total de sus apariciones. Nótese que no refleja un porcentaje del total de palabras de la entrevista ni tampoco del total de apéndices interrogativos; solamente aquéllos que están seleccionados.
+        La siguiente gráfica muestra la proporción de las unidades comparadas a partir del total de sus apariciones. Nótese que no refleja un porcentaje del total de palabras de la entrevista ni tampoco del total de apéndices interrogativos; solamente aquéllos que están seleccionados. En general, el apéndice _¿no?_ es abrumadoramente más frecuente que el resto. Por su parte, los apéndices con conjunción disyuntiva _¿o sí?_ y _¿o no?_ son una fracción minoritaria.
     ''')
-    
     st.write(fig_pies)
+
+    st.markdown('''
+        ### Proporción de unidades según variables de sexo para cada ciudad
+        La siguiente es una gráfica de árbol que compara la proporción de distintas variables anidadas mediante el tamaño de las cajas. Así, una caja dentro de otra representa un subconjunto de la mayor y dos cajas dentro del mismo conjunto son entre sí conjuntos disjuntos.
+        En esta gráfica llama la atención el hecho de que las ciudades presentan patrones particulares no sólo respecto al uso de unidades, especialmente _¿sí?_ y _¿no?_, sino también de las proporciones de hombres y mujeres que los usan. Por ejemplo, en Guadalajara, los hombres casi no usan _¿no?_
+    ''')
     st.write(tree_fig)
     st.write(fig_uXsexo)
     st.write(fig_uXedad)
