@@ -44,7 +44,7 @@ def main():
             filtro2 = filtro2[filtro2['Ciudad'].isin(ciudad)]
     
             # Box de promedio por ciudad de cuenta de palabras por entrevista
-            fig1 = px.box(filtro1, x = 'Ciudad', y = 'Cuenta de palabras')
+            fig1 = px.box(filtro1, x = 'Ciudad', y = 'Cuenta de palabras', boxmean = True)
     
             # Pay de % de unidad por ciudad
             fig_pies = make_subplots(rows = 1, cols = len(filtro2.loc[:,'Ciudad'].unique()), specs= [[{'type': 'domain'} for i in range(len(filtro2.loc[:,'Ciudad'].unique()))]])
@@ -89,10 +89,10 @@ def main():
     ''')
     
     ciudad = st.multiselect(label = 'Selecciona una ciudad', options = ['Guadalajara', 'Mexicali', 'México, D.F.', 'Monterrey', 'Puebla'], default = ['Monterrey', 'México, D.F.'])
-    unidad = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     fig1, fig_pies, tree_fig, fig_uXsexo, fig_uXedad, fig_uXeducacion = plot_data(ciudad, unidad)
     
     st.write(fig1)
+    unidad = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     st.write(fig_pies)
     st.write(tree_fig)
     st.write(fig_uXsexo)
