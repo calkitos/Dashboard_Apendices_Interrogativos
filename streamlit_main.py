@@ -97,10 +97,21 @@ def main():
     st.markdown('''
         ### Cuenta de palabras por entrevista en cada ciudad
         
-        Para realizar comparaciones contextualizadas, creo que un factor importante es conocer el total de palabras de las entrevistas. La <<GRÁFICA X>> es un gráfico de cajas que muestra la relación del promedio de palabras por entrevista en cada ciudad. Ciudades como Puebla tienen un mayor promedio de palabras que otras como Mexicali. Esto significa que, dentro de un margen razonable, es esperable encontrar más apéndices interrogativos en términos absolutos en la primera ciudad que en la segunda.
+        Para realizar comparaciones contextualizadas, creo que un factor importante es conocer el total de palabras de las entrevistas. La siguiente es una gráfica de cajas que muestra la relación del promedio de palabras por entrevista en cada ciudad. Ciudades como Puebla tienen un mayor promedio de palabras que otras como Mexicali. Esto significa que, dentro de un margen razonable, es esperable encontrar más apéndices interrogativos en términos absolutos en la primera ciudad que en la segunda.
     ''')
     st.write(fig1)
+    
+    st.markdown('''
+        ## Aparición de apéndices interrogativos
+        A continuación se presentan los resultados estadísticos de aparición de los apéndices interrogativos estudiados (_¿sí?_, _¿no?_, _¿o sí?_ y _¿o no?_). A partir de los metadatos contenidos en los archivos de texto que conforman los documentos de entrevistas de PRESEEA, es posible distinguir no solamente la ciudad donde se utilizó uno u otro, sino también otras variables sociolingüísticas del enunciador, tales como: sexo, nivel de instrucción y edad. Las siguientes gráficas tratan de mantenerse en la línea de las propuestas por Cestero Mancera (2019) para permitir cierto grado de comparación con sus resultados.
+    ''')
     st.session_state['unidad'] = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
+    
+    st.markdown('''
+        ### Proporción relativa de la unidad por cada ciudad
+        La siguiente gráfica muestra la proporción de las unidades comparadas a partir del total de sus apariciones. Nótese que no refleja un porcentaje del total de palabras de la entrevista ni tampoco del total de apéndices interrogativos; solamente aquéllos que están seleccionados.
+    ''')
+    
     st.write(fig_pies)
     st.write(tree_fig)
     st.write(fig_uXsexo)
