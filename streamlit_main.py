@@ -92,12 +92,12 @@ def main():
     unidad = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     fig1, fig_pies, tree_fig, fig_uXsexo, fig_uXedad, fig_uXeducacion = plot_data(ciudad, unidad)
     
-    st.plotly_chart(fig1)
-    st.plotly_chart(fig_pies)
-    st.plotly_chart(tree_fig)
-    st.plotly_chart(fig_uXsexo)
-    st.plotly_chart(fig_uXedad)
-    st.plotly_chart(fig_uXeducacion)
+    st.write(fig1)
+    st.write(fig_pies)
+    st.write(tree_fig)
+    st.write(fig_uXsexo)
+    st.write(fig_uXedad)
+    st.write(fig_uXeducacion)
 
 if __name__ == "__main__":
     main()
