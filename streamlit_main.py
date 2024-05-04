@@ -119,9 +119,34 @@ def main():
         En esta gráfica llama la atención el hecho de que las ciudades presentan patrones particulares no sólo respecto al uso de unidades, especialmente _¿sí?_ y _¿no?_, sino también de las proporciones de hombres y mujeres que los usan. Por ejemplo, en Guadalajara, los hombres casi no usan _¿no?_
     ''')
     st.write(tree_fig)
+
+    st.markdown('''
+    ### Cuenta de unidades por sexo
+
+    La siguiente gráfica representa en términos absolutos el número de apariciones de cada apéndice interrogativo por la variable de sexo.
+
+    ''')
     st.write(fig_uXsexo)
+
+    st.markdown('''
+    ### Cuenta de unidades por edad
+    
+    La siguiente gráfica representa en términos absolutos el número de apariciones de cada apéndice interrogativo por grupo de edad.
+    ''')           
     st.write(fig_uXedad)
+    
+    st.markdown('''
+    ### Cuenta de unidades por nivel de instrucción
+    
+    La siguiente gráfica representa en términos absolutos el número de apariciones de cada apéndice interrogativo por nivel de instrucción.
+    ''')
     st.write(fig_uXeducacion)
+
+    st.markdown('''
+    ## Referencias
+
+    Cestero Mancera, A. M. (2019). Apéndices interrogativos de control de contacto: estudio sociolingüístico. _Cuadernos de Lingüística de El Colegio de México_, _6_(1), 1–65. [https://doi.org/10.24201/clecm.v6i1.111](https://doi.org/10.24201/clecm.v6i1.111)
+    ''')
 
 if __name__ == "__main__":
     main()
