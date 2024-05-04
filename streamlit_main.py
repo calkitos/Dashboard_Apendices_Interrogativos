@@ -95,6 +95,8 @@ def main():
     fig1, fig_pies, tree_fig, fig_uXsexo, fig_uXedad, fig_uXeducacion = plot_data(ciudad, unidad)
 
     st.markdown('''
+        ### Cuenta de palabras por entrevista en cada ciudad
+        
         Para realizar comparaciones contextualizadas, creo que un factor importante es conocer el total de palabras de las entrevistas. La <<GRÁFICA X>> es un gráfico de cajas que muestra la relación del promedio de palabras por entrevista en cada ciudad. Ciudades como Puebla tienen un mayor promedio de palabras que otras como Mexicali. Esto significa que, dentro de un margen razonable, es esperable encontrar más apéndices interrogativos en términos absolutos en la primera ciudad que en la segunda.
     ''')
     st.write(fig1)
