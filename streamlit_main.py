@@ -89,10 +89,11 @@ def main():
     ''')
     
     ciudad = st.multiselect(label = 'Selecciona una ciudad', options = ['Guadalajara', 'Mexicali', 'México, D.F.', 'Monterrey', 'Puebla'], default = ['Monterrey', 'México, D.F.'])
+    unidad = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
+
     fig1, fig_pies, tree_fig, fig_uXsexo, fig_uXedad, fig_uXeducacion = plot_data(ciudad, unidad)
     
     st.write(fig1)
-    unidad = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     st.write(fig_pies)
     st.write(tree_fig)
     st.write(fig_uXsexo)
