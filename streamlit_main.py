@@ -103,7 +103,7 @@ def main():
     
     st.markdown('''
         ## Aparición de apéndices interrogativos
-        A continuación se presentan los resultados estadísticos de aparición de los apéndices interrogativos estudiados (_¿sí?_, _¿no?_, _¿o sí?_ y _¿o no?_). A partir de los metadatos contenidos en los archivos de texto que conforman los documentos de entrevistas de PRESEEA, es posible distinguir no solamente la ciudad donde se utilizó uno u otro, sino también otras variables sociolingüísticas del enunciador, tales como: sexo, nivel de instrucción y edad. Las siguientes gráficas tratan de mantenerse en la línea de las propuestas por Cestero Mancera (2019) para permitir cierto grado de comparación con sus resultados.
+        A continuación se presentan los resultados estadísticos de aparición de los apéndices interrogativos estudiados (_¿sí?_, _¿no?_, _¿o sí?_ y _¿o no?_). A partir de los metadatos contenidos en los archivos de texto que conforman los documentos de entrevistas de PRESEEA, es posible distinguir no solamente la ciudad donde se utilizó uno u otro, sino también otras variables sociolingüísticas del enunciador, tales como: sexo, nivel de instrucción y edad. Las siguientes gráficas tratan de mantenerse en la línea de las propuestas por Cestero Mancera [(2019)](https://doi.org/10.24201/clecm.v6i1.111) para permitir cierto grado de comparación con sus resultados.
     ''')
     st.session_state['unidad'] = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     
