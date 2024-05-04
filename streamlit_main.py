@@ -96,7 +96,7 @@ def main():
 
     st.markdown('''
         Para realizar comparaciones contextualizadas, creo que un factor importante es conocer el total de palabras de las entrevistas. La <<GRÁFICA X>> es un gráfico de cajas que muestra la relación del promedio de palabras por entrevista en cada ciudad. Ciudades como Puebla tienen un mayor promedio de palabras que otras como Mexicali. Esto significa que, dentro de un margen razonable, es esperable encontrar más apéndices interrogativos en términos absolutos en la primera ciudad que en la segunda.
-    '''
+    ''')
     st.write(fig1)
     st.session_state['unidad'] = st.multiselect(label = 'Selecciona un apéndice interrogativo', options = ['¿sí?', '¿no?', '¿o sí?', '¿o no?'], default = ['¿sí?', '¿no?'])
     st.write(fig_pies)
