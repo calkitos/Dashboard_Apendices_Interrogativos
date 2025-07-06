@@ -58,7 +58,7 @@ def main():
                 labels = df_counts.loc[:, 'Unidad']
                 values = df_counts.loc[:, 'count']
     
-                fig_pies.add_trace(go.Pie(labels  = labels, values = values, title = titulo, textposition = 'bottom center'), row = 1, col = i+1)
+                fig_pies.add_trace(go.Pie(labels  = labels, values = values, title = titulo), row = 1, col = i+1)
     
             # Treemap de unidad, ciudad y sexo
             ciudad_unidad_sexo = pd.DataFrame(filtro2.loc[:, ['Ciudad', 'Unidad', 'Sexo']].groupby(['Ciudad', 'Unidad']).value_counts())
